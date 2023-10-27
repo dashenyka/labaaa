@@ -7,3 +7,14 @@ while True:
     shifr = int(input("Для зашифровки текста введите 1, а для его для расшифровки -1: "))
     shag = int(input("Введите шаг сдвига: "))
     vihod= ''
+    for i in range(len(string)):
+        try:
+            index = alphavit.index(string[i])
+            vihod += alphavit[(index+shag*shifr)%66]
+
+        except ValueError:
+                try:
+                    index = alphavit.index(string[i])
+                    vihod += alphavit[(index+shag*shifr)%66]
+                except ValueError:
+                    vihod += string[i]
