@@ -18,3 +18,8 @@ while True:
                     vihod += alphavit[(index+shag*shifr)%66]
                 except ValueError:
                     vihod += string[i]
+    if shifr == 1:
+        print("Зашифровка: " + vihod)
+    elif shifr == -1:
+        print("Расшифровка: " + vihod)
+    break
