@@ -1,5 +1,9 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+print("Шифр Цезаря")
+alphavit ='АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+while True:
+    string = input("Введите строку: ")
+    if string == '0':
+        break
+    shifr = int(input("Для зашифровки текста введите 1, а для его для расшифровки -1: "))
+    shag = int(input("Введите шаг сдвига: "))
+    vihod= ''
